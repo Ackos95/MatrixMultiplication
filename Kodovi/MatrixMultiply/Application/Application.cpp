@@ -46,12 +46,10 @@ int main(int argc, char** argv)
 				<< "Calculating took " << (after - before).seconds() << " seconds.\n\n";
 		}
 
-		/*
+		
 		std::cout << "Writting data to output file." << std::endl;
 		writeToFile();
-		std::cout << "Data writting finished\n. Check results in \""
-			<< ApplicationData::getInstance()->getOutputPath() << "\" file.\n\n";
-		*/
+		std::cout << "Data writting finished.\n Check results in file which you passed through command line arguments.\n";
 	}
 	catch (std::runtime_error& e)
 	{
